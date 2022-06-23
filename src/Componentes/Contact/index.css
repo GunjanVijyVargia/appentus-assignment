@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.send-btn{
+    height: 60px;
+    width: 60px;
+    border: none !important;
+    outline: none;
+    position: absolute;
+    bottom: 10%;
+    right: -28px;
+    background: rgb(111, 148, 241) !important;
+    border-radius: 100% !important;
+}
+
+@media screen and (max-width: 600px) {
+    .send-btn {
+        bottom: 0%;
+        right: 0px;
+    }
+}

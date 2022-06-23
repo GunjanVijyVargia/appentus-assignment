@@ -1,0 +1,38 @@
+.service-img {
+    height: 150px;
+    padding: 10px;
+}
+.divider {
+    height: 10px;
+    width: 30%;
+    background-color: blue;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+.w-80 {
+    width: 80% !important;
+}
+.text-right {
+    text-align: right !important;
+}
+.service-content { 
+    justify-content: end !important;
+}
+.service-content-start {
+    justify-content: start !important;
+}
+@media screen and (max-width: 600px) {
+    .service-content { 
+        justify-content: center !important;
+        text-align: justify;
+    }
+    .divider {
+        display: none !important;
+    }
+    .text-left, .text-right {
+        text-align: justify !important;
+        width: 100% !important;
+        padding: 10px;
+    }
+  }
+  

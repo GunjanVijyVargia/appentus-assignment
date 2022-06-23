@@ -1,0 +1,92 @@
+.photo-grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    --bs-gutter-x: 0 !important;
+}
+
+/* Create four equal columns that sits next to each other */
+.photo-grid-column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.photo-grid-column img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+.grid-btn {
+    background: transparent !important;
+    color: black;
+    border: none !important;
+    outline: none !important;
+    font-size: 1px;
+}
+.grid-btn svg {
+    font-size: 24px !important;
+    margin-top: 10px;
+}
+
+.grid-footer p {
+    margin: 0 !important;
+    font-size: 12px;
+}
+
+.grid-footer h2 {
+    font-size: 18px;
+}
+
+.grid-description {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000b5;
+}
+.photo-container {
+    position: relative;
+}
+.photo-container:hover .grid-description {
+    opacity: 1 !important;
+}
+.brand-btn,.dtp-btn{
+    border-radius: 50px !important;
+    background:rgb(231, 226, 226) !important;
+    color: black !important;
+    border: none !important;
+    margin-right: 10px;
+    
+} 
+.web-btn,.ilustraion-btn{
+    border-radius: 50px !important;
+    background:#5882FA !important;
+    border: none !important;
+
+
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .photo-grid-column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .photo-grid-column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
